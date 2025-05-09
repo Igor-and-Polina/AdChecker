@@ -68,6 +68,8 @@ public class ZOV_AD : MonoBehaviour
         // Create Interstitial object
         interstitialAd = new LevelPlayInterstitialAd(interstitialAdUnitId);
 
+        interstitialAd.LoadAd();
+
         // Register to Interstitial events
         interstitialAd.OnAdLoaded += InterstitialOnAdLoadedEvent;
         interstitialAd.OnAdLoadFailed += InterstitialOnAdLoadFailedEvent;
@@ -95,7 +97,7 @@ public class ZOV_AD : MonoBehaviour
             if (IronSource.Agent.isRewardedVideoAvailable())
                 IronSource.Agent.showRewardedVideo();
             else
-                Debug.Log("unity-script: Rewarded Video недоступно");
+                Debug.Log("unity-script: Rewarded Video пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
         }
     }
 
@@ -110,7 +112,7 @@ public class ZOV_AD : MonoBehaviour
             if (interstitialAd.IsAdReady())
                 interstitialAd.ShowAd();
             else
-                Debug.Log("unity-script: Interstitial не готов");
+                Debug.Log("unity-script: Interstitial пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
         }
     }
 
@@ -280,5 +282,4 @@ public class ZOV_AD : MonoBehaviour
     }
 
     #endregion
-
 }

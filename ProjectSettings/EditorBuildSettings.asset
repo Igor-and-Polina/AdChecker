@@ -12,6 +12,7 @@ EditorBuildSettings:
     path: Assets/App/Scenes/LevelPlaySample.unity
     guid: bd1eb3e1953724de08fadd7cbbc6d358
   m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 333b09988e0f5da4dadfed13f546b6f9, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 436edde6554aaac4fa9b7210b5e683e0, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 5d2615f29ca4d7a4c9fe25c6e4cbb1bb, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

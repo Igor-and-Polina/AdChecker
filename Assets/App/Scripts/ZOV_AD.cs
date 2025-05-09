@@ -37,9 +37,7 @@ public class ZOV_AD : MonoBehaviour
         LevelPlay.OnInitSuccess += SdkInitializationCompletedEvent;
         LevelPlay.OnInitFailed += SdkInitializationFailedEvent;
 
-        ToggleBanner();
-
-    }
+    }   
 
     void EnableAds()
     {
@@ -89,7 +87,7 @@ public class ZOV_AD : MonoBehaviour
     public void ToggleRewarded()
     {
         isRewardedShown = !isRewardedShown;
-        rewardedText.text = isRewardedShown ? "Скрыть Rewarded" : "Показать Rewarded";
+        rewardedText.text = isRewardedShown ? "Hide Rewarded" : "Show Rewarded";
 
         Debug.Log("unity-script: Toggle Rewarded - " + isRewardedShown);
         if (isRewardedShown)
@@ -104,7 +102,7 @@ public class ZOV_AD : MonoBehaviour
     public void ToggleInterstitial()
     {
         isInterstitialShown = !isInterstitialShown;
-        interstitialText.text = isInterstitialShown ? "Скрыть Interstitial" : "Показать Interstitial";
+        interstitialText.text = isInterstitialShown ? "Hide Interstitial" : "Show Interstitial";
 
         Debug.Log("unity-script: Toggle Interstitial - " + isInterstitialShown);
         if (isInterstitialShown)
@@ -119,7 +117,7 @@ public class ZOV_AD : MonoBehaviour
     public void ToggleBanner()
     {
         isBannerShown = !isBannerShown;
-        bannerText.text = isBannerShown ? "Скрыть Banner" : "Показать Banner";
+        bannerText.text = isBannerShown ? "Hide Banner" : "Show Banner";
 
         Debug.Log("unity-script: Toggle Banner - " + isBannerShown);
         if (isBannerShown)
